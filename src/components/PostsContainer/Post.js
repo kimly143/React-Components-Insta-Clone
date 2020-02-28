@@ -1,27 +1,27 @@
 // You will add code in this file
-import React from "react";
-import CommentSection from "../CommentSection/CommentSectionContainer";
-import LikeSection from "./LikeSection";
-import PostHeader from "./PostHeader";
+import React from 'react';
+import CommentSection from '../CommentSection/CommentSectionContainer';
+import LikeSection from './LikeSection';
+import PostHeader from './PostHeader';
 
-import "./Posts.css";
+import './Posts.css';
 
 // pass props in this file to
 const Post = props => {
   // set up state for the likes
 
   return (
-    <div className="post-border">
+    <div className='post-border'>
       <PostHeader
         username={props.post.username}
         thumbnailUrl={
           props.post.thumbnailUrl
         }
       />
-      <div className="post-image-wrapper">
+      <div className='post-image-wrapper'>
         <img
-          alt="post thumbnail"
-          className="post-image"
+          alt='post thumbnail'
+          className='post-image'
           src={props.post.imageUrl}
         />
       </div>
