@@ -18,8 +18,9 @@ const Post = (props) => {
 			</div>
 			<LikeSection 
         updateLikes={() => {
-          updateLikes(likes +1);
+          updateLikes(likes + 1);
         }}
+        likes={likes}
       />
 			<CommentSection postId={props.post.imageUrl} comments={props.post.comments} />
 		</div>
