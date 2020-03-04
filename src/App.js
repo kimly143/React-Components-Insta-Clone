@@ -10,12 +10,12 @@ import PostsPage from './components/PostsContainer/PostsPage.js';
 import SearchBar from './components/SearchBar/SearchBarContainer.js';
 
 const App = () => {
-  const [query, updateQuery] = useState('');
+  const [query, setQuery] = useState('');
 
   return (
     <div className='App'>
       {/* pass properties to SearchBar and PostsPage */}
-      <SearchBar query={query} updateQuery={updateQuery} />
+      <SearchBar query={query} setQuery={setQuery} />
       <PostsPage query={query}/>
     </div>
   );

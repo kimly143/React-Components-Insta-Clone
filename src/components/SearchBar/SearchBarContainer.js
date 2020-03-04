@@ -14,7 +14,7 @@ const SearchBar = (props) => {
       }}>
         {/* search ----- onChange => save new value */}
         <input value={props.query} onChange={(event)=>{
-          props.updateQuery(event.target.value)
+          props.setQuery(event.target.value)
         }}
           type='text'
           placeholder='Search'
