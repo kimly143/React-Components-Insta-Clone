@@ -2,15 +2,20 @@
 import React from 'react';
 import './SearchBar.css';
 
-const SearchBar = () => {
+const SearchBar = (props) => {
   return (
     <div className='search-bar-wrapper'>
       <div className='image-wrapper'>
         <i className='fab fa-instagram'/>
-        <img class name='instText' src='/instatext.jpg'/>
+        <img className='instText' src='/instatext.jpg'/>
       </div>
-      <form className='search-form'>
-        <input
+      <form className='search-form' onSubmit={(event)=>{
+        event.preventDefault();
+      }}>
+        {/* search ----- onChange => save new value */}
+        <input value={props.query} onChange={(event)=>{
+          props.updateQuery(event.target.value)
+        }}
           type='text'
           placeholder='Search'
         />

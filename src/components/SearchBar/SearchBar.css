@@ -15,6 +15,7 @@
   color: #262626;
 }
 .image-wrapper {
+  font-family: 'Lobster Two' ;
   height: 50px;
 }
 
@@ -31,5 +32,5 @@
 }
 
 .instText {
-  padding-top: 20px;
+  padding-top: 10px;
 }
