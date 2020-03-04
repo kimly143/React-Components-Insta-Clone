@@ -7,7 +7,8 @@ import './Posts.css';
 import data from '../../dummy-data';
 
 const PostsPage = (props) => {
-  
+
+  // const queryRegExp = new RegExp(props.query,'i');
 	return (
 		<div className="posts-container-wrapper">
 			{/* map through data here to return a Post and pass data as props to Post */}

@@ -7,7 +7,7 @@ const SearchBar = (props) => {
     <div className='search-bar-wrapper'>
       <div className='image-wrapper'>
         <i className='fab fa-instagram'/>
-        <img className='instText' src='/instatext.jpg'/>
+        <img className='instText' src='/inst.png'/>
       </div>
       <form className='search-form' onSubmit={(event)=>{
         event.preventDefault();
