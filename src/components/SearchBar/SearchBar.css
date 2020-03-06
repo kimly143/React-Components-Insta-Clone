@@ -15,6 +15,7 @@
   color: #262626;
 }
 .image-wrapper {
+  font-family: 'Lobster Two' ;
   height: 50px;
 }
 
@@ -28,4 +29,8 @@
 
 .social {
   width: 50px;
+}
+
+.instText {
+  padding-top: 10px;
 }

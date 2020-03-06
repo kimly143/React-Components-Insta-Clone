@@ -1,39 +1,41 @@
 // You will add code in this file
-import React from "react";
-import CommentSection from "../CommentSection/CommentSectionContainer";
-import LikeSection from "./LikeSection";
-import PostHeader from "./PostHeader";
-
-import "./Posts.css";
+import React, { useState } from 'react';
+import CommentSection from '../CommentSection/CommentSectionContainer';
+import LikeSection from './LikeSection';
+import PostHeader from './PostHeader';
+import './Posts.css';
 
 // pass props in this file to
-const Post = props => {
-  // set up state for the likes
+const Post = (props) => {
+	// set up state for the likes
+	const [ likes, updateLikes ] = useState(0);
 
-  return (
-    <div className="post-border">
-      <PostHeader
-        username={props.post.username}
-        thumbnailUrl={
-          props.post.thumbnailUrl
-        }
+	return (
+		<div className="post-border">
+      <PostHeader 
+        username={props.post.username} 
+        thumbnailUrl={props.post.thumbnailUrl} 
       />
-      <div className="post-image-wrapper">
-        <img
-          alt="post thumbnail"
-          className="post-image"
-          src={props.post.imageUrl}
-        />
-      </div>
-      <LikeSection />
-      <CommentSection
-        postId={props.post.imageUrl}
-        comments={props.post.comments}
+
+			<div className="post-image-wrapper">
+				<img alt="post thumbnail" className="post-image" src={props.post.imageUrl} />
+			</div>
+
+      {/* Kim Buck 2020 - update likes number by adding one everytime they click the heart */}
+			<LikeSection
+				updateLikes={() => {
+					updateLikes(likes + 1);
+				}}
+				likes={likes}
+			/>
+
+      <CommentSection 
+        postId={props.post.imageUrl} 
+        comments={props.post.comments} 
       />
-    </div>
-  );
+
+		</div>
+	);
 };
 
 export default Post;
-
-

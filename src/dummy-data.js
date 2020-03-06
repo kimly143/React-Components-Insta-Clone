@@ -1,7 +1,28 @@
 const dummyData = [
     {
+        username: "Klytana",
+        thumbnailUrl: "https://scontent-dfw5-1.cdninstagram.com/v/t51.2885-19/s320x320/75244450_551644422262720_5059984199293861888_n.jpg?_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_ohc=yneiHKEhMSAAX-A-YZC&oh=d0a4f205ad7fcc3c8c3cdbb32540240d&oe=5E8F54BB",
+        imageUrl: 'https://scontent-dfw5-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/p640x640/84251039_102494007990423_1854882771214236140_n.jpg?_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_cat=103&_nc_ohc=Kxo2kJdqNjEAX-KqOcF&oh=23e0004ca8f6d26487195ef96f2157b6&oe=5E91ABFE',
+        likes: 400,
+        timestamp: "July 17th 2017, 12:42:40 pm",
+        comments: [
+            {
+                username: "Klytana",
+                text: "We've got more than just delicious coffees to offer at our shops!"
+            },
+            {
+                username: "bbuck",
+                text: "So awesome! I love how they made him eating noodles! That was a big part of the anime."
+            },
+            {
+                username: "Kazamyr",
+                text: "EXCUSE ME! MORE SPAGHETTI PLEASE!"
+            }
+        ]
+    },
+    {
         username: "philzcoffee",
-        thumbnailUrl: 'https://instagram.fsjo9-1.fna.fbcdn.net/vp/d4728e507fe1eb2895fb7ca394bb6431/5E4122B1/t51.2885-15/s150x150/71118783_2434459423505735_6295784028176668008_n.jpg?_nc_ht=instagram.fsjo9-1.fna.fbcdn.net',
+        thumbnailUrl: "https://scontent-iad3-1.cdninstagram.com/v/t51.2885-19/s150x150/67248626_346350186304601_6715901285419188224_n.jpg?_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_ohc=knDeVfZyZmEAX_f8JX8&oh=c04ae5f2798f982b96e7cd7e141aeddd&oe=5E8242C8", 
         imageUrl: 'https://images.unsplash.com/photo-1477763858572-cda7deaa9bc5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1876&q=80',
         likes: 400,
         timestamp: "July 17th 2017, 12:42:40 pm",
